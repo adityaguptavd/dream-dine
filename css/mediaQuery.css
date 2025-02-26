@@ -1,0 +1,98 @@
+/* Macbook and high resolution devices */
+@media screen and (min-width: 1460px) {
+    
+}
+
+/* Desktops and medium sized laptops */
+@media screen and (max-width: 1460px) {
+    
+}
+
+/* Ipads and Tablets (Landscape) */
+@media screen and (max-width: 1220px) {
+    .col-d-6{ grid-column: span 6; }
+    .col-d-12{ grid-column: span 12; }
+    .banner .box{ background: url(../img/banner-d-img.webp) no-repeat right bottom; }
+
+    .food-categories .card{ padding: 40px 20px; }
+    .food-categories .card h3{ margin: 20px 0; }
+    .food-categories .card p{ margin: 5px 0 20px; }
+
+    .story .story-desc, .ingredients .ingredients-desc{ padding: 6rem 0 12rem; }
+
+    footer .signup-form{ align-items: center; text-align: center; margin-top: 3rem; gap: 2rem; }
+}
+
+/* Ipads and Tablets (Portrait) */
+@media screen and (max-width: 980px) {
+    html{ font-size: 14px; }
+    .col-t-2{ grid-column: span 2; }
+    .col-t-4{ grid-column: span 4; }
+    .col-t-6{ grid-column: span 6; }
+    .col-t-12{ grid-column: span 12; }
+
+    h1{ text-align: left; margin-left: 2rem; }
+    nav .menu{ display: flex; }
+    .navigation{ order: 1; }
+    .navigation .lamp{ right: 0; }
+    .hide-nav{ position: absolute; background-color: var(--primary); display: none; top: 50%; right: 0; text-align: center;  padding-top: 2rem; border-bottom-right-radius: 33px; border-bottom-left-radius: 33px; z-index: -1; }
+    .hide-nav li{ margin-bottom: 1rem; }
+    .signup-wrapper{ place-items: center end; }
+    .banner .box{ background: url(../img/banner-t-img.webp) no-repeat right bottom; }
+
+    .food-categories .center-end, .food-categories .center-start{ place-items: center center; margin: 2rem 0; }
+
+    .common-section .desc{ padding: 0; }
+    .common-section h2{ font-size: 3rem; }
+}
+
+@media screen and (max-width: 980px) and (min-width: 600px) {
+    .food-categories .card{ max-width: 600px; }
+    .food-categories .food{ display: flex; gap: 2rem; align-items: center; text-align: left; }
+}
+
+/* Smart Phones (Landscape) */
+@media screen and (max-width: 767px) {
+    .col-l-12{ grid-column: span 12; }
+
+    .protocols{ padding: 2rem 0; background: url(../img/protocols-l-bg-img.webp) no-repeat center bottom / cover; height: 600px; }
+
+    .ingredients .desc{ margin-left: 0; max-width: 400px; }
+    .ingredients .row > div:last-child{ order: -1; }
+
+}
+
+/* Smart Phones (Portrait) */
+@media screen and (max-width: 480px) {
+    html{ font-size: 12px; }
+    .col-p-3{ grid-column: span 3; }
+    .col-p-9{ grid-column: span 9; }
+    .col-p-12{ grid-column: span 12; }
+    .col-p-hide{ display: none; }
+    .row{ gap: 1rem; }
+    .navigation ul .signup{ display: block; }
+    .navigation{ display: grid; place-items: center; }
+
+    .banner .box{ background: url(../img/banner-p-img.webp) no-repeat right bottom; }
+
+    .form-wrapper .btn{ width: 100%; margin-top: 2rem; }
+    
+    .protocols{ height: 700px; }
+
+    .common-section .row{ padding: 0 2rem 2rem 2rem; }
+
+    .review-container .card .flex{ flex-direction: column; align-items: center; text-align: center; }
+
+    footer .social.flex{ flex-direction: column; }
+}
+
+/* Small Screens like Jio Phone 2 */
+@media screen and (max-width: 360px) {
+    html{ font-size: 11px; }
+
+    .banner h2{ font-size: 4rem; }
+    .banner .btn-box{ flex-direction: column; }
+    .form-wrapper .btn{ padding: 1rem; font-size: 12px; }
+
+    footer a{ font-size: 20px; }
+}

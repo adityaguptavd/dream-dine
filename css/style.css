@@ -1,0 +1,88 @@
+/* Header */
+header{ margin-top: 6rem; position: sticky; top: 2rem; }
+nav{ position: relative; border-radius: 33px; padding: 1rem 0; }
+
+.nav-wrapper{ background: var(--primary); color: var(--white); border-radius: 33px; padding: 1rem 0; }
+
+h1{ text-align: center; color: var(--white); }
+nav li{ flex-shrink: 0; }
+nav a{ padding: 5px 1rem; font-size: 17.48px; }
+nav a.signup{ color: #6bb99c; }
+.navigation{ position: relative; height: 100%; }
+
+nav .menu{ border: none; background: none; outline: none; width: 30px; height: 30px; gap: 4px; }
+nav .menu > .bar{ height: 4px; display: block; width: 100%; background-color: var(--white); }
+nav .menu > .chevron-icon{ font-size: 24px; color: var(--white); }
+
+
+/* Banner */
+.banner{ color: var(--primary); }
+.banner .box{ background: url(../img/banner-img.webp) no-repeat right bottom; padding: 9rem 0 15rem; margin-right: -2rem; }
+.banner h2{ font-size: 5rem; margin-bottom: 2rem; }
+.banner h3{ font: 400 28.77px var(--ff); margin-bottom: 20px; }
+.banner p{ font-weight: 600; font-size: 16.95px; }
+.banner .btn-box{ margin: 2rem 0; }
+
+/* Booking */
+.booking{ padding: 1rem 0; color: var(--primary); }
+.booking .book{ font-weight: 700; font-size: 21px; margin-left: 1rem; }
+.booking .book img{ vertical-align: middle; margin-left: 1rem; }
+.form-wrapper{ margin-top: 3rem; background-color: var(--white-touch); padding: 3rem; border-radius: 35px; color: var(--primary); }
+.form-wrapper label{ font-size: 21px; font-weight: 700; }
+.form-wrapper input{ padding: 2rem 3rem; border-radius: 20px; border: 2px solid var(--primary); font-size: 21px; color: var(--primary); background-color: var(--bg); }
+.form-wrapper .btn{ border-radius: 20px; padding: 2rem 3rem; font-size: 18px; line-height: 30px; font-weight: 400;  }
+.form-wrapper output{ color: red; font-size: 16px; font-weight: 600; height: 30px; width: 100%; }
+
+
+/* Food Categories */
+.food-categories{ color: var(--primary); margin: 10rem 0; }
+.food-categories h2{ margin-bottom: 5rem; }
+.food-categories .card{ padding: 40px; background-color: var(--white-touch); max-width: 385px; border-radius: 35px; }
+.food-categories .card h3{ margin: 30px 0; font-size: 40.25px; }
+.food-categories .card p{ margin: 5px 0 30px; font-size: 16.95px; font-weight: 600; }
+
+/* Protocol */
+.protocols{ padding: 2rem 0; background: url(../img/protocols-bg-img.webp) no-repeat center bottom / cover; height: 900px; }
+.protocols .btn{ margin-top: 25px; }
+
+/* Our Story and Ingredients */
+.common-section{ padding: 9rem 0 0; }
+.common-section .desc{ max-width: 400px; padding: 12rem 0 10rem; }
+.common-section .desc p{ font-size: 16.95px; font-weight: 600; margin: 1rem 0 3rem; }
+
+.common-section .row{ padding: 0 5rem 2rem 5rem; }
+
+.ingredients .desc{ margin-left: 2rem; padding: 6rem 0 0; max-width: 600px; }
+
+.chef .row{ background-color: var(--white-touch); border-radius: 35px; }
+.chef .desc{ padding: 4rem 0 0; }
+
+/* Reviews */
+.reviews{ padding: 9rem 0 0; }
+.review-container{ margin: 6rem 0; }
+.review-container .card{ max-width: 600px; border-radius: 35px; background-color: var(--white-touch); padding: 3rem; }
+.review-container .card h3{ font-size: 28.56px; }
+.review-container .card blockquote{ font-weight: 600; font-size: 13.87px; margin: 1rem 0; }
+
+/* Newsletter subscription */
+.subscribe{ padding: 5rem 0; background: url(../img/subscribe-bg.webp) no-repeat center center / cover; }
+.subscribe legend{ margin-bottom: 3rem; }
+.subscribe input, .subscribe textarea{ max-width: 885px; width: 100%; padding: 2rem 5rem; border-radius: 35px; border: none; outline: none; background-color: #ccc1a3; color: var(--primary); font-size: 16.67px; font-weight: 600; }
+.subscribe input:focus, .subscribe textarea:focus, .subscribe button:focus{ outline: 2px solid var(--white-touch); }
+.subscribe button{ border-radius: 35px; max-width: 300px; color: var(--primary); padding: 22px 4rem; font-size: 20.13px; font-weight: 700; margin-top: 1rem; }
+
+.subscribe output{ max-width: 885px; width: 100%; padding-left: 2rem; font-size: 16px; color: var(--primary); }
+
+.subscribe output{ font-size: 16px; text-align: left; }
+.subscribe textarea{ resize: none; }
+
+/* Footer */
+footer{ background-color: #fa9d30; padding: 5rem 0 10rem; color: #404040; margin-top: 2rem; }
+footer h2{ color: #ebe3cd; font-size: 41px; margin-top: 5rem; margin-bottom: 3rem; }
+footer a, b{ font-weight: 700; font-size: 25px; }
+
+footer .signup-form{ text-align: right; gap: 6rem; }
+footer form{ width: 100%; max-width: 500px; }
+footer input{ width: 100%; border-radius: 35px; padding: 1rem; border: 2px solid #404040; background: none; outline: none; font-size: 25px; color: #404040; }
+
+footer .social li a{ width: 45px; line-height: 45px; border-radius: 50%; background-color: #ebe3cd; text-align: center; }

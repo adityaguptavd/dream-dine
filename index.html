@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dream Dine offers an exquisite fine dining experience with delicious cuisine, cozy ambiance, and excellent service. Book a table now!">
+    <title>Dream Dine - Fine Dining Restaurant with Exquisite Cuisine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <div class="col-3 col-t-6 col-p-9">
+                            <h1>Dream Dine</h1>
+                        </div>
+                        <div class="col-7 col-t-2 col-p-3 navigation">
+                            <button class="menu flex column j-center hidden" aria-label="Toggle Navigation Menu" aria-controls="main-nav" aria-expanded="false">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="fa fa-chevron-up chevron-icon hidden"></span>
+                            </button>
+                            <ul class="flex gap-2 a-center j-center hide-nav" id="main-nav">
+                                <li><a href="#body">Home</a></li>
+                                <li><a href="#food-categories">Menu</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#footer" class="signup hidden">Sign up</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2 col-t-4 col-p-hide grid center-center signup-wrapper">
+                            <a href="#footer" class="signup">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-5 col-t-6 col-l-12">
+                            <h2>Eat, drink and Enjoy.</h2>
+                            <h3>Your Restaurant is Waiting For You</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus beatae culpa reprehenderit.</p>
+                            <div class="btn-box flex">
+                                <a href="#about" class="btn bg-orange white">Explore</a>
+                                <a href="#food-categories" class="btn">See Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="booking form-section">
+            <div class="container">
+                <p class="book">Book a Table <img src="./img/Arrow-right.webp" alt="Right Arrow"></p>
+                <div class="form-wrapper box-shadow">
+                    <form>
+                        <div class="row a-center">
+                            <div class="col-9 col-d-12">
+                                <fieldset class="row gap-3">
+                                    <legend class="sr-only">Booking Details</legend>
+                                    <div class="flex column gap-1 col-3 col-t-6 col-p-12">
+                                        <label for="date">Date <span class="fa fa-chevron-down"></span></label>
+                                        <input type="text" name="date" id="date" placeholder="DD/MM/YYYY" required>
+                                        <output class="err" id="date-err"></output>
+                                    </div>
+                                    <div class="flex column gap-1 col-3 col-t-6 col-p-12">
+                                        <label for="time">Time <span class="fa fa-chevron-down"></span></label>
+                                        <input type="text" name="time" id="time" placeholder="HH:MM" required>
+                                        <output class="err" id="time-err"></output>
+                                    </div>
+                                    <div class="flex column gap-1 col-5 col-t-12">
+                                        <label for="email">Email <span class="fa fa-chevron-down"></span></label>
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-3 col-d-12">
+                                <button type="submit" class="btn bg-cyan white">Check Availability</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="overlay hidden"></div>
+            <div class="popup hidden">
+                <div class="flex column gap-1">
+                    <b>Sorry!</b>
+                    <p>We don't have seats available right now.</p>
+                    <button class="btn bg-cyan white">Book Later</button>
+                </div>
+            </div>
+        </div>
+        <section class="food-categories" id="food-categories">
+            <div class="container">
+                <h2 class="heading t-center"><span class="light-orange">Delicious</span> <br> Food Categories</h2>
+                <div class="card-container">
+                    <div class="row">
+                        <div class="col-4 col-t-12">
+                            <div class="center-start">
+                                <div class="card t-center box-shadow">
+                                    <div class="food">
+                                        <div class="food-img">
+                                            <img src="./img/meat-img.webp" alt="Meat" width="188" height="188">
+                                        </div>
+                                        <div class="food-desc">
+                                            <h3>Meat</h3>
+                                            <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum quam dicta omnis quidem dolorem minus saepe assumenda.</p>
+                                            <a href="javscript:void(0)" class="btn bg-orange white">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-t-12">
+                            <div class="center-center">
+                                <div class="card t-center box-shadow">
+                                    <div class="food">
+                                        <div class="food-img">
+                                            <img src="./img/fish-img.webp" alt="Fish" width="188" height="188">
+                                        </div>
+                                        <div class="food-desc">
+                                            <h3>Fish</h3>
+                                            <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum quam dicta omnis quidem dolorem minus saepe assumenda.</p>
+                                            <a href="javscript:void(0)" class="btn bg-orange white">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-t-12">
+                            <div class="center-end">
+                                <div class="card t-center box-shadow">
+                                    <div class="food">
+                                        <div class="food-img">
+                                            <img src="./img/drinks-img.webp" alt="Drinks" width="188" height="188">
+                                        </div>
+                                        <div class="food-desc">
+                                            <h3>Drinks</h3>
+                                            <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum quam dicta omnis quidem dolorem minus saepe assumenda.</p>
+                                            <a href="javscript:void(0)" class="btn bg-orange white">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="protocols">
+            <div class="flex column a-center">
+                <h2 class="heading t-center"><span class="cyan">COVID - 19 Protocol</span> <br> We care about you</h2>
+                <a href="javscript:void(0)" class="btn bg-cyan white">Read More</a>
+            </div>
+        </section>
+        <section class="story common-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-l-12">
+                        <div class="desc">
+                            <h2 class="heading"><span class="light-orange">Story</span> <br> Our Restaurant</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque asperiores minima nobis aliquid saepe nostrum reprehenderit sequi. Necessitatibus voluptates dolore nihil dolor sit illo facilis adipisci quae eum laborum.</p>
+                            <a href="javscript:void(0)" class="btn bg-orange white">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-l-12">
+                        <div class="img">
+                            <img src="./img/story-img.webp" class="img-resp" alt="Story" width="663" height="734">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ingredients common-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-l-12">
+                        <div class="img">
+                            <img src="./img/ingredients-img.webp" class="img-resp" alt="Ingredients" width="685" height="582">
+                        </div>
+                    </div>
+                    <div class="col-6 col-l-12">
+                        <div class="desc">
+                            <h2 class="heading"><span class="light-orange">Ingredients</span> <br> Fresh and healthy ingredients </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque asperiores minima nobis aliquid saepe nostrum reprehenderit sequi. Necessitatibus voluptates dolore nihil dolor sit illo facilis adipisci quae eum laborum.</p>
+                            <a href="javscript:void(0)" class="btn bg-orange white">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chef common-section" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-l-12">
+                        <div class="desc">
+                            <h2 class="heading"><span class="cyan">Words from</span> <br> The Chef </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque asperiores minima nobis aliquid saepe nostrum reprehenderit sequi. Necessitatibus voluptates dolore nihil dolor sit illo facilis adipisci quae eum laborum.</p>
+                            <a href="javscript:void(0)" class="btn bg-orange white">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-l-12">
+                        <div class="img">
+                            <img src="./img/chef-img.webp" class="img-resp" alt="Chef" width="722" height="595">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="heading t-center"><span class="light-orange">What our</span> <br> Customer Say </h2>
+                <div class="review-container">
+                    <div class="flex j-center wrap gap-3">
+                        <div class="card box-shadow">
+                            <div class="flex gap-3">
+                                <div class="pic">
+                                    <img src="./img/jhon-smith.webp" alt="Jhon Smith">
+                                </div>
+                                <div class="review-rating">
+                                    <h3>Jhon Smith</h3>
+                                    <blockquote><q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam.</q></blockquote>
+                                    <img src="./img/stars.webp" alt="Rating stars">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card box-shadow">
+                            <div class="flex gap-3">
+                                <div class="pic">
+                                    <img src="./img/sara-jonson.webp" alt="Sara Jonson">
+                                </div>
+                                <div class="review-rating">
+                                    <h3>Sara Jonson</h3>
+                                    <blockquote><q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam.</q></blockquote>
+                                    <img src="./img/stars.webp" alt="Rating stars">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card box-shadow">
+                            <div class="flex gap-3">
+                                <div class="pic">
+                                    <img src="./img/jhon-smith.webp" alt="Jhon Smith">
+                                </div>
+                                <div class="review-rating">
+                                    <h3>Jhon Smith</h3>
+                                    <blockquote><q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam.</q></blockquote>
+                                    <img src="./img/stars.webp" alt="Rating stars">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe form-section" id="contact">
+            <div class="container">
+                <form>
+                    <fieldset class="flex column t-center a-center gap-1">
+                        <legend><h2 class="heading t-center"><span class="light-orange">Subscribe</span> <br> To Our Newsletter </h2></legend>
+                        <input type="text" aria-label="Name" placeholder="Name" minlength="3" required>
+                        <input type="email" aria-label="Mail" placeholder="Mail" required id="subscribeEmail" name="subscribeEmail">
+                        <textarea rows="5" aria-label="Message" placeholder="Message (min 30 and max 350 characters)" minlength="30" maxlength="350" required></textarea>
+                        <output><span>0</span> / 350 characters</output>
+                        <button type="submit" class="bg-cyan">Send Message</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="overlay hidden"></div>
+            <div class="popup hidden">
+                <div class="flex column gap-1">
+                    <b>Thank You For Subscribing!</b>
+                    <p>You will receive updates on email <span></span></p>
+                    <button class="btn bg-cyan white">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-d-6 col-l-12">
+                    <h2>About</h2>
+                    <ul class="flex column gap-3">
+                        <li><a href="javscript:void(0)">History</a></li>
+                        <li><a href="javscript:void(0)">Our Team</a></li>
+                        <li><a href="javscript:void(0)">Mission Statement</a></li>
+                        <li><a href="javscript:void(0)">Terms & Condition</a></li>
+                        <li><a href="javscript:void(0)">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-d-6 col-l-12">
+                    <h2>What we do</h2>
+                    <ul class="flex column gap-3">
+                        <li><a href="javscript:void(0)">News and stories</a></li>
+                        <li><a href="javscript:void(0)">Publications</a></li>
+                        <li><a href="javscript:void(0)">Take action</a></li>
+                        <li><a href="javscript:void(0)">Recommendations</a></li>
+                        <li><a href="javscript:void(0)">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-d-12">
+                    <div class="flex column a-end signup-form">
+                        <h2>Sign Up To Receive Our Newsletter</h2>
+                        <form>
+                            <input type="email" aria-label="Email" placeholder="Email" required>
+                        </form>
+                        <div class="social flex a-center gap-2">
+                            <b>Follow us!</b>
+                            <ul class="flex a-center gap-3">
+                                <li><a href="javscript:void(0)"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="javscript:void(0)"><span class="fa fa-instagram"></span></a></li>
+                                <li><a href="javscript:void(0)"><span class="fa fa-youtube-play"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="popup hidden">
+            <div class="flex column gap-1">
+                <b>Signed Up</b>
+                <p>You have successfully signed up.</p>
+                <button class="btn bg-cyan white">Close</button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
