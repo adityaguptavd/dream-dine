@@ -1,3 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Global CSS */
+*, ::before, ::after{ margin: 0; padding: 0; box-sizing: border-box; }
+ul{ padding: 0; list-style: none; }
+a{ text-decoration: none; color: inherit; display: inline-block; }
+button{ padding: 0; cursor: pointer; border: none; }
+img{ vertical-align: bottom; }
+fieldset{ border: none; }
+h1, h2, h3, h4, h5, h6{ 
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--primary);
+}
+
+html{ 
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    --ff: "Montserrat", serif;
+    --white: #fff;
+    --primary: #12202f;
+    --bg: #ebe3cd;
+    --white-touch: #faf8ef;
+}
+
+body{ font-size: 16px; background-color: var(--bg); overflow-x: hidden; }
+
+/* Utility classes */
+.flex{ display: flex; }
+.column{ flex-direction: column; }
+.wrap{ flex-wrap: wrap; }
+.j-center{ justify-content: center; }  
+.a-center{ align-items: center; }
+.a-end{ align-items: flex-end; }
+.j-sb{ justify-content: space-between; }
+.grid{ display: grid; }
+.center-center{ place-items: center; }
+.center-start{ place-items: center start; }
+.center-end{ place-items: center end; }
+.gap-1{ gap: 1rem; }
+.gap-2{ gap: 2rem; }
+.gap-3{ gap: 3rem; }
+.t-center{ text-align: center; }
+.img-resp{ max-width: 100%; height: auto; }
+.hidden{ display: none; }
+.overlay{ position: fixed; inset: 0; z-index: 1; background-color: #000b; }
+.popup{ position: fixed; width: min(80vw, 500px); min-width: 250px; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--white-touch); border-radius: 35px; padding: 2rem; z-index: 2; }
+
+.btn{ padding: 1rem 2rem; border-radius: 30px; font-weight: 600; font-size: 21px; text-align: center; }
+
+h2.heading{ font-size: 50px; }
+h2.heading span{ font: 400 28.77px/39.77px var(--ff); }
+
+/* Colors */
+.bg-orange{ background-color: #df581e; }
+.bg-cyan{ background-color: #6bb99c; }
+.cyan{ color: #6bb99c; }
+.light-orange{ color: #eaa73b; }
+.white{ color: var(--white); }
+.box-shadow{ box-shadow: -6px 6px #e2dac2; }
+
+/* Containers */
+.container{ max-width: 1440px; margin: auto; padding: 0 3.67rem; }
+
+/* 12-Grid Layout */
+.row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem 2rem; }
+.col-1{ grid-column: span 1; }
+.col-2{ grid-column: span 2; }
+.col-3{ grid-column: span 3; }
+.col-4{ grid-column: span 4; }
+.col-5{ grid-column: span 5; }
+.col-6{ grid-column: span 6; }
+.col-7{ grid-column: span 7; }
+.col-9{ grid-column: span 9; }
+
 /* Header */
 header{ margin-top: 6rem; position: sticky; top: 2rem; }
 nav{ position: relative; border-radius: 33px; padding: 1rem 0; }
@@ -86,3 +168,102 @@ footer form{ width: 100%; max-width: 500px; }
 footer input{ width: 100%; border-radius: 35px; padding: 1rem; border: 2px solid #404040; background: none; outline: none; font-size: 25px; color: #404040; }
 
 footer .social li a{ width: 45px; line-height: 45px; border-radius: 50%; background-color: #ebe3cd; text-align: center; }
+
+/* Macbook and high resolution devices */
+@media screen and (min-width: 1460px) {
+    
+}
+
+/* Desktops and medium sized laptops */
+@media screen and (max-width: 1460px) {
+    
+}
+
+/* Ipads and Tablets (Landscape) */
+@media screen and (max-width: 1220px) {
+    .col-d-6{ grid-column: span 6; }
+    .col-d-12{ grid-column: span 12; }
+    .banner .box{ background: url(../img/banner-d-img.webp) no-repeat right bottom; }
+
+    .food-categories .card{ padding: 40px 20px; }
+    .food-categories .card h3{ margin: 20px 0; }
+    .food-categories .card p{ margin: 5px 0 20px; }
+
+    .story .story-desc, .ingredients .ingredients-desc{ padding: 6rem 0 12rem; }
+
+    footer .signup-form{ align-items: center; text-align: center; margin-top: 3rem; gap: 2rem; }
+}
+
+/* Ipads and Tablets (Portrait) */
+@media screen and (max-width: 980px) {
+    html{ font-size: 14px; }
+    .col-t-2{ grid-column: span 2; }
+    .col-t-4{ grid-column: span 4; }
+    .col-t-6{ grid-column: span 6; }
+    .col-t-12{ grid-column: span 12; }
+
+    h1{ text-align: left; margin-left: 2rem; }
+    nav .menu{ display: flex; }
+    .navigation{ order: 1; }
+    .navigation .lamp{ right: 0; }
+    .hide-nav{ position: absolute; background-color: var(--primary); display: none; top: 50%; right: 0; text-align: center;  padding-top: 2rem; border-bottom-right-radius: 33px; border-bottom-left-radius: 33px; z-index: -1; }
+    .hide-nav li{ margin-bottom: 1rem; }
+    .signup-wrapper{ place-items: center end; }
+    .banner .box{ background: url(../img/banner-t-img.webp) no-repeat right bottom; }
+
+    .food-categories .center-end, .food-categories .center-start{ place-items: center center; margin: 2rem 0; }
+
+    .common-section .desc{ padding: 0; }
+    .common-section h2{ font-size: 3rem; }
+}
+
+@media screen and (max-width: 980px) and (min-width: 600px) {
+    .food-categories .card{ max-width: 600px; }
+    .food-categories .food{ display: flex; gap: 2rem; align-items: center; text-align: left; }
+}
+
+/* Smart Phones (Landscape) */
+@media screen and (max-width: 767px) {
+    .col-l-12{ grid-column: span 12; }
+
+    .protocols{ padding: 2rem 0; background: url(../img/protocols-l-bg-img.webp) no-repeat center bottom / cover; height: 600px; }
+
+    .ingredients .desc{ margin-left: 0; max-width: 400px; }
+    .ingredients .row > div:last-child{ order: -1; }
+
+}
+
+/* Smart Phones (Portrait) */
+@media screen and (max-width: 480px) {
+    html{ font-size: 12px; }
+    .col-p-3{ grid-column: span 3; }
+    .col-p-9{ grid-column: span 9; }
+    .col-p-12{ grid-column: span 12; }
+    .col-p-hide{ display: none; }
+    .row{ gap: 1rem; }
+    .navigation ul .signup{ display: block; }
+    .navigation{ display: grid; place-items: center; }
+
+    .banner .box{ background: url(../img/banner-p-img.webp) no-repeat right bottom; }
+
+    .form-wrapper .btn{ width: 100%; margin-top: 2rem; }
+    
+    .protocols{ height: 700px; }
+
+    .common-section .row{ padding: 0 2rem 2rem 2rem; }
+
+    .review-container .card .flex{ flex-direction: column; align-items: center; text-align: center; }
+
+    footer .social.flex{ flex-direction: column; }
+}
+
+/* Small Screens like Jio Phone 2 */
+@media screen and (max-width: 360px) {
+    html{ font-size: 11px; }
+
+    .banner h2{ font-size: 4rem; }
+    .banner .btn-box{ flex-direction: column; }
+    .form-wrapper .btn{ padding: 1rem; font-size: 12px; }
+
+    footer a{ font-size: 20px; }
+}
